@@ -51,10 +51,18 @@ Of course, it is going to work for more than 1 class per file.
                             File containing classes (one class by line / must be the same class name that in label files)
       -o OUTPUT, --output OUTPUT
                             File path for the output file
-      -xml                  To specify if input labels are xml format
+      -xml                  To specify if input labels are VOC XML format
       --normalize           Normalized coordinates in output file
-      --centered CENTERED   Centered coordinates, x_center, y_center, width,
+      --centered            Centered coordinates, x_center, y_center, width,
                             height in output file
-      -csv                  To specify if input labels are csv format
+      -csv                  To specify if input labels are CSV format
+      -yolo                 To specify if input labels are YOLO format
       -v, --verbose         To specify if you want more verbosity on logs
 
+## Release
+### v0.1
+- Tool works for XML (VOC) format and single CSV file from MakeSense
+- To add:
+    - Handling number of decimals
+    - VGG compatibility
+    - Custom export
